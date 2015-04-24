@@ -235,7 +235,8 @@ input:hover, input:focus, textarea:hover, textarea:focus {
     list-style: none;
     font-size: 0; }
     .section .home .floor {
-      margin: 3px 0; }
+      margin: 3px 0;
+      vertical-align: top; }
       .section .home .floor__number {
         font-size: 11px;
         color: #474747;
@@ -249,6 +250,17 @@ input:hover, input:focus, textarea:hover, textarea:focus {
         width: 20px;
         height: 20px;
         background-color: #d51d1d;
-        margin-right: 3px; }
+        margin-right: 3px;
+        position: relative;
+        text-align: center;
+        vertical-align: top; }
+        .section .home .floor .flat > span {
+          font-size: 11px;
+          color: #fff;
+          line-height: 20px; }
         .section .home .floor .flat.disabled {
           background-color: #aeaeae; }
+        .section .home .floor .flat.reserve {
+          background-color: #ffba00; }
+        .section .home .floor .flat.free {
+          background-color: #78b020; }

@@ -39,6 +39,7 @@
 
         .floor {
             margin: 3px 0;
+            vertical-align: top;
 
             &__number {
                 font-size: 11px;
@@ -56,9 +57,26 @@
                 height: 20px;
                 background-color: #d51d1d;
                 margin-right: 3px;
+                position: relative;
+                text-align: center;
+                vertical-align: top;
+
+                & > span {
+                    font-size: 11px;
+                    color: #fff;
+                    line-height: 20px;
+                }
 
                 &.disabled {
                     background-color: #aeaeae;
+                }
+
+                &.reserve {
+                    background-color: #ffba00;
+                }
+
+                &.free {
+                    background-color: #78b020;
                 }
             }
         }

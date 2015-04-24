@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="{if $page.noindex}none{else}all{/if}">
+    <meta name="description" content="{$page.description}">
+    <meta name="keywords" content="{$page.keywords}">
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>{$page.title}</title>
+
+</head>
+<body>
+    <!--[if gte IE 9]>
+    <style type="text/css">
+        .gradient {
+            filter: none;
+        }
+    </style>
+    <![endif]-->
+
+    
+    <!-- [+] .page-wrapper -->
+    <div class="page-wrapper">
+
+        <!-- [+] .page-wrapper__inner -->
+        <div class="page-wrapper__inner">
+            
+            
+            <!-- [+] .filter -->
+            <div class="filter clearfix">
+                
+                <div class="filter__block pull-left">
+                    
+                    <span class="filter__text">Тип квартиры:</span>
+
+                    <select name="apartment" id="apartment">
+                        <option value="1">1-комнатная квартира</option>
+                        <option value="2">2-комнатная квартира</option>
+                        <option value="3">3-комнатная квартира</option>
+                        <option value="4">4-комнатная квартира</option>
+                    </select>
+
+                </div>
+
+                <div class="filter__block pull-right text-right">
+                    
+                    <span class="filter__text text-left">Номер дома:</span>
+
+                    <select name="apartment" id="apartment" class="text-left">
+                        <option value="1">1-комнатная квартира</option>
+                        <option value="2">2-комнатная квартира</option>
+                        <option value="3">3-комнатная квартира</option>
+                        <option value="4">4-комнатная квартира</option>
+                    </select>
+
+                </div>
+
+
+                <div class="filter__block pull-left">
+                    
+                    <span class="filter__text">Этаж:</span>
+
+                    <div class="filter__range">
+                        <input type="text" class="from" placeholder="от">
+                        <div class="separator"></div>
+                        <input type="text" class="to" placeholder="до">
+                    </div>
+
+                </div>
+
+
+                <div class="filter__block pull-right text-right">
+                    
+                    <span class="filter__text text-left">Площадь:</span>
+
+                    <div class="filter__range text-left">
+                        <input type="text" class="from" placeholder="от">
+                        <div class="separator"></div>
+                        <input type="text" class="to" placeholder="до">
+                    </div>
+
+                    <div class="filter__pick text-left">
+                        <input type="checkbox" id="checkbox-1">
+                        <label for="checkbox-1">с отделкой</label>
+                        <br>
+                        <input type="checkbox" id="checkbox-2">
+                        <label for="checkbox-2">без отделки</label>
+                    </div>
+
+                </div>
+
+
+                <div class="filter__block pull-left">
+                    <span class="filter__text">Цена за м<sup>2</sup>:</span>
+                </div>
+
+                <div class="filter__block pull-right text-right">
+                    <span class="filter__text text-left">Стоимость:</span>
+                </div>
+
+                <div class="filter__block pull-left">
+                    <a href="" class="btn btn-primary pull-left">Подобрать квартиру</a>
+                </div>
+
+                <div class="filter__block pull-right">
+                    <a href="" class="btn btn-default pull-right">Сбросить параметры</a>
+                </div>
+
+
+            </div>
+            <!-- [-] .filter -->
+
+
+            <div class="plan">
+                <div class="section">
+                    <div class="section__roof"><span>1-ая секция</span></div>
+
+                    <ul class="home">
+                        <li class="floor">
+                            <span class="floor__number">24</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">23</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">22</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">21</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">20</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">19</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">18</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">17</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">16</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">15</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">14</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">13</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">12</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">11</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">10</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">9</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">8</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">7</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">6</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">5</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">4</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">3</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">2</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">1</span>
+                            <div class="flat disabled"></div>
+                            <div class="flat disabled"></div>
+                            <div class="flat disabled"></div>
+                            <div class="flat disabled"></div>
+                            <div class="flat disabled"></div>
+                            <div class="flat disabled"></div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <div class="section__roof"><span>2-ая секция</span></div>
+                    <ul class="home">
+                        <li class="floor">
+                            <span class="floor__number">24</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">23</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">22</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">21</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">20</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">19</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">18</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">17</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">16</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">15</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">14</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">13</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">12</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">11</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">10</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">9</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">8</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">7</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">6</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">5</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">4</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">3</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">2</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">1</span>
+                            <div class="flat disabled"></div>
+                            <div class="flat disabled"></div>
+                            <div class="flat disabled"></div>
+                            <div class="flat disabled"></div>
+                            <div class="flat disabled"></div>
+                            <div class="flat disabled"></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <div class="section__roof"><span>3-ая секция</span></div>
+                    <ul class="home">
+                        <li class="floor">
+                            <span class="floor__number">24</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">23</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">22</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">21</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">20</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">19</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">18</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">17</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">16</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">15</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">14</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">13</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">12</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">11</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">10</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">9</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">8</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">7</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">6</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">5</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">4</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">3</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">2</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">1</span>
+                            <div class="flat disabled"></div>
+                            <div class="flat disabled"></div>
+                            <div class="flat disabled"></div>
+                            <div class="flat disabled"></div>
+                            <div class="flat disabled"></div>
+                            <div class="flat disabled"></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <div class="section__roof"><span>4-ая секция</span></div>
+                    <ul class="home">
+                        <li class="floor">
+                            <span class="floor__number">24</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">23</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">22</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">21</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">20</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">19</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">18</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">17</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">16</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">15</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">14</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">13</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">12</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">11</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">10</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">9</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">8</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">7</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">6</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">5</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">4</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">3</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">2</span>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                            <div class="flat"></div>
+                        </li>
+                        <li class="floor">
+                            <span class="floor__number">1</span>
+                            <div class="flat disabled"></div>
+                            <div class="flat disabled"></div>
+                            <div class="flat disabled"></div>
+                            <div class="flat disabled"></div>
+                            <div class="flat disabled"></div>
+                            <div class="flat disabled"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- [-] .page-wrapper__inner -->
+
+    </div>
+    <!-- [-] .page-wrapper -->
+    
+
+    <script src="bower_components/jquery-1.11.1/dist/jquery.min.js"></script>
+
+    <script type="text/javascript" src="js/ion.rangeSlider.min.js"></script>
+
+    <script src="js/jquery.formstyler.min.js"></script>
+
+    <script src="js/index.js"></script>
+
+
+</body>
+</html>

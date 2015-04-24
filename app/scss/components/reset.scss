@@ -1,0 +1,12 @@
+a, img {
+    outline: none;
+    border: none;
+}
+
+input,
+textarea {
+    &:hover,
+    &:focus {
+        outline: none;
+    }
+}

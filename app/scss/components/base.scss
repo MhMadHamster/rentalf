@@ -16,3 +16,11 @@ body {
         margin: 0 auto;
     }
 }
+
+a {
+    color: #d61d22;
+
+    &:hover {
+        text-decoration: none;
+    }
+}

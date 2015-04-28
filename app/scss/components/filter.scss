@@ -3,7 +3,7 @@
     border: 1px solid #e7e7e7;
     padding: 25px;
     box-sizing: border-box;
-    background-image: url('../images/bg-texture.jpg');
+    background-image: url('../images/pattern.png');
 
     &__block {
         width: 460px;
@@ -16,6 +16,10 @@
         &.pull-right {
             clear: right;
         }
+    }
+
+    &__button {
+        margin-top: 30px;
     }
 
     &__text {
@@ -46,7 +50,7 @@
     }
 
     &__pick {
-        width: 100px;
+        width: 95px;
         display: inline-block;
         vertical-align: middle;
     }

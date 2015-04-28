@@ -1,0 +1,109 @@
+.cart {
+    background-image: url('../images/pattern.png');
+    box-sizing: border-box;
+    padding: 15px 15px 20px 20px;
+    margin: 15px 0;
+    margin-right: 2px;
+    border: 1px solid #e7e7e7;
+
+    &__img {
+        width: 536px;
+        margin-top: 5px;
+
+        & > img {
+            max-width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__info {
+        width: 385px;
+        box-sizing: border-box;
+        padding-left: 5px;
+    }
+
+    &__price {
+        line-height: 33px;
+        font-size: 25px;
+        color: #d61d22;
+        font-weight: bold;
+        box-sizing: border-box;
+        padding-left: 5px;
+        margin: 15px 0 7px;
+
+        & > span {
+            font-size: 17px;
+            font-weight: normal;
+            color: #353535;
+        }
+    }
+
+    &__link {
+        margin-left: 5px;
+        font-size: 14px;
+        line-height: 33px;
+        color: #78b020;
+        text-decoration: none;
+        border-bottom: 1px dashed #78b020;
+
+        &:hover {
+            border: none;
+        }
+    }
+
+    &__phone {
+        margin: 25px 0 25px 5px;
+
+        .phone-thumb {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .phone-text {
+            display: inline-block;
+            vertical-align: middle;
+
+            .muted {
+                font-size: 14px;
+                color: #a9a9a9;
+            }
+
+            .number {
+                font-size: 17px;
+                color: #353535;
+
+                & > span {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    .btn {
+        margin-left: 5px;
+    }
+
+    &__img-thumb {
+        margin-top: 16px;
+        margin-right: 17px;
+        position: relative;
+        width: 260px;
+        height: 190px;
+
+        .thumb-caption {
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            font-size: 17px;
+            color: #353535;
+            padding: 15px 20px;
+            background-color: rgba(#fff, .8);
+        }
+
+        &:nth-child(3) {
+            clear: left;
+        }
+    }
+}

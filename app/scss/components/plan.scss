@@ -1,6 +1,7 @@
 .plan {
     padding: 40px 0;
     text-align: center;
+    margin: 15px 0;
 }
 
 .section {
@@ -61,6 +62,10 @@
                 text-align: center;
                 vertical-align: top;
 
+                & > * {
+                    font-size: 11px;
+                }
+
                 & > span {
                     font-size: 11px;
                     color: #fff;
@@ -78,6 +83,74 @@
                 &.free {
                     background-color: #78b020;
                 }
+            }
+        }
+    }
+}
+
+.flat-info {
+    width: 100%;
+    margin: 16px 0;
+    box-sizing: border-box;
+    border: 1px solid #e7e7e7;
+    text-align: center;
+    background-image: url('../images/pattern.png');
+
+    &__item {
+        display: inline-block;
+        margin: 10px;
+        text-align: left;
+
+        & > span {
+            font-size: 17px;
+            color: #3b3b3b;
+            display: inline-block;
+            box-sizing: border-box;
+            padding-left: 15px;
+        }
+
+        & > div {
+            vertical-align: middle;
+            width: 21px;
+            height: 21px;
+            display: inline-block;
+            box-sizing: border-box;
+            border: 1px solid;
+            background-color: #fff;
+            position: relative;
+
+            &:after {
+                position: absolute;
+                width: 11px;
+                height: 11px;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                margin: auto;
+                content: '';
+                display: block;
+                background-color: #fff;
+            }
+
+            &.sold {
+                border-color: #d81d24;
+                &:after { background-color: #d81d24; }
+            }
+
+            &.free {
+                border-color: #78b020;
+                &:after { background-color: #78b020; }
+            }
+
+            &.reserve {
+                border-color: #ffba00;
+                &:after { background-color: #ffba00; }
+            }
+
+            &.disabled {
+                border-color: #aeaeae;
+                &:after { background-color: #aeaeae; }
             }
         }
     }

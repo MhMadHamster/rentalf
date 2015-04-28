@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="{if $page.noindex}none{else}all{/if}">
+    <meta name="description" content="{$page.description}">
+    <meta name="keywords" content="{$page.keywords}">
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>{$page.title}</title>
+
+</head>
+<body>
+    <!--[if gte IE 9]>
+    <style type="text/css">
+        .gradient {
+            filter: none;
+        }
+    </style>
+    <![endif]-->
+
+    
+    <!-- [+] .page-wrapper -->
+    <div class="page-wrapper">
+
+        <!-- [+] .page-wrapper__inner -->
+        <div class="page-wrapper__inner">
+            
+            
+            <!-- [+] .filter -->
+            <div class="filter clearfix">
+                
+                <div class="filter__block pull-left">
+                    
+                    <span class="filter__text">Тип квартиры:</span>
+
+                    <select name="apartment" id="apartment" class="gradient">
+                        <option value="1">1-комнатная квартира</option>
+                        <option value="2">2-комнатная квартира</option>
+                        <option value="3">3-комнатная квартира</option>
+                        <option value="4">4-комнатная квартира</option>
+                    </select>
+
+                </div>
+
+                <div class="filter__block pull-right text-right">
+                    
+                    <span class="filter__text text-left">Номер дома:</span>
+
+                    <select name="apartment" id="apartment" class="gradient text-left">
+                        <option value="1">1-комнатная квартира</option>
+                        <option value="2">2-комнатная квартира</option>
+                        <option value="3">3-комнатная квартира</option>
+                        <option value="4">4-комнатная квартира</option>
+                    </select>
+
+                </div>
+
+
+                <div class="filter__block pull-left">
+                    
+                    <span class="filter__text">Этаж:</span>
+
+                    <div class="filter__range">
+                        <input type="text" class="from" placeholder="от">
+                        <div class="separator"></div>
+                        <input type="text" class="to" placeholder="до">
+                    </div>
+
+                </div>
+
+
+                <div class="filter__block pull-right text-right">
+                    
+                    <span class="filter__text text-left">Площадь:</span>
+
+                    <div class="filter__range text-left">
+                        <input type="text" class="from" placeholder="от">
+                        <div class="separator"></div>
+                        <input type="text" class="to" placeholder="до">
+                    </div>
+
+                    <div class="filter__pick text-left">
+                        <input type="checkbox" id="checkbox-1">
+                        <label for="checkbox-1">с отделкой</label>
+                        <br>
+                        <input type="checkbox" id="checkbox-2">
+                        <label for="checkbox-2">без отделки</label>
+                    </div>
+
+                </div>
+
+
+                <div class="filter__block pull-left">
+                    <span class="filter__text">Цена за м<sup>2</sup>:</span>
+                    <div class="slider" class="clearfix">
+                        <span class="slider-limit pull-left">0 <small>руб</small></span>
+                        <span class="slider-limit pull-right">50 000 <small>руб</small></span>
+                    </div>
+                </div>
+
+                <div class="filter__block pull-right text-right">
+                    <span class="filter__text text-left">Стоимость:</span>
+                    <div class="slider" class="clearfix">
+                        <span class="slider-limit pull-left">0 <small>руб</small></span>
+                        <span class="slider-limit pull-right">50 000 <small>руб</small></span>
+                    </div>
+                </div>
+
+                <div class="filter__block pull-left filter__button">
+                    <a href="" class="btn btn-primary gradient pull-left">Подобрать квартиру</a>
+                </div>
+
+                <div class="filter__block pull-right filter__button">
+                    <a href="" class="btn btn-default gradient pull-right">Сбросить параметры</a>
+                </div>
+
+
+            </div>
+            <!-- [-] .filter -->
+
+
+            <div class="result">
+                <div class="result__text">Найдено 28 результатов, соответсвующих данным параметрам</div>
+
+                <table class="table dark">
+                    
+                    <tr>
+                        <th>Корпус</th>
+                        <th>Этаж</th>
+                        <th>Тип квартиры</th>
+                        <th>Площадь м<sup>2</sup></th>
+                        <th>Отделка</th>
+                        <th>Цена за м<sup>2</sup>, рублей</th>
+                        <th>Стоимость, рублей</th>
+                        <th>Планировка</th>
+                    </tr>
+                    <tr>
+                        <td>content</td>
+                        <td>2</td>
+                        <td>content</td>
+                        <td>content</td>
+                        <td>content</td>
+                        <td>content</td>
+                        <td>content</td>
+                        <td><a href="#" class="btn btn-primary btn-sm">Подробнее</a></td>
+                    </tr>
+                    <tr>
+                        <td>content</td>
+                        <td>2</td>
+                        <td>content</td>
+                        <td>content</td>
+                        <td>content</td>
+                        <td>content</td>
+                        <td>content</td>
+                        <td><a href="#" class="btn btn-primary btn-sm">Подробнее</a></td>
+                    </tr>
+                    <tr>
+                        <td>content</td>
+                        <td>2</td>
+                        <td>content</td>
+                        <td>content</td>
+                        <td>content</td>
+                        <td>content</td>
+                        <td>content</td>
+                        <td><a href="#" class="btn btn-primary btn-sm">Подробнее</a></td>
+                    </tr>
+                    <tr>
+                        <td>content</td>
+                        <td>2</td>
+                        <td>content</td>
+                        <td>content</td>
+                        <td>content</td>
+                        <td>content</td>
+                        <td>content</td>
+                        <td><a href="#" class="btn btn-primary btn-sm">Подробнее</a></td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+
+        </div>
+        <!-- [-] .page-wrapper__inner -->
+
+    </div>
+    <!-- [-] .page-wrapper -->
+    
+
+    <script src="bower_components/jquery-1.11.1/dist/jquery.min.js"></script>
+
+    <script src="js/jquery.nouislider.all.min.js"></script>
+
+    <script src="js/wNumb.min.js"></script>
+
+    <script src="js/jquery.liblink.js"></script>
+
+    <script src="js/jquery.formstyler.min.js"></script>
+
+    <script src="js/index.js"></script>
+
+
+</body>
+</html>

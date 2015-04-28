@@ -1,0 +1,64 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5 {
+    margin: 10px 0;
+    display: block;
+    font-family: 'Open Sans';
+    color: #d61d22;
+    font-weight: normal;
+}
+
+h1,
+.h1 {
+    font-size: 30px;
+}
+
+h2,
+.h2 {
+    font-size: 25px;
+}
+
+h3,
+.h3 {
+    font-size: 20px;
+}
+
+h4,
+.h4 {
+    font-size: 16px;
+}
+
+h5,
+.h5 {
+    font-size: 13px;
+}
+
+.text-block {
+    font-size: 14px;
+    color: #6b6b6b;
+    margin: 10px 0;
+    display: block;
+
+    &:first-child { margin-top: 0; }
+
+    &:last-child { margin-bottom: 0; }
+}
+
+.page-header {
+    font: {
+        size: 30px;
+        family: 'Roboto Condensed', sans-serif;
+        weight: 600;
+    }
+    line-height: 32px;
+    color: #3d3d3d;
+    text-transform: uppercase;
+    letter-spacing: -0.8px;
+}

@@ -1,0 +1,27 @@
+.crumbs {
+    width: 100%;
+    margin: 10px 0;
+
+    &__item,
+    span {
+        font-size: 12px;
+        margin-left: 2px;
+        display: inline-block;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:last-child {
+            color: #3b3b3b;
+            text-decoration: none;
+        }
+    }
+
+    & > span {
+        color: #3b3b3b;
+        &:last-of-type {
+            margin-left: 6px;
+        }
+    }
+}

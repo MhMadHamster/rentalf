@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="{if $page.noindex}none{else}all{/if}">
+    <meta name="description" content="{$page.description}">
+    <meta name="keywords" content="{$page.keywords}">
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>{$page.title}</title>
+
+</head>
+<body>
+    <!--[if gte IE 9]>
+    <style type="text/css">
+        .gradient {
+            filter: none;
+        }
+    </style>
+    <![endif]-->
+
+    
+    <!-- [+] .page-wrapper -->
+    <div class="page-wrapper">
+
+        <!-- [+] .page-wrapper__inner -->
+        <div class="page-wrapper__inner">
+
+
+            <!-- [+] .filter -->
+            <div class="filter clearfix">
+                
+                <div class="filter__block pull-left">
+                    
+                    <span class="filter__text">Тип квартиры:</span>
+
+                    <select name="apartment" id="apartment" class="gradient">
+                        <option value="1">1-комнатная квартира</option>
+                        <option value="2">2-комнатная квартира</option>
+                        <option value="3">3-комнатная квартира</option>
+                        <option value="4">4-комнатная квартира</option>
+                    </select>
+
+                </div>
+
+                <div class="filter__block pull-right text-right">
+                    
+                    <span class="filter__text text-left">Номер дома:</span>
+
+                    <select name="apartment" id="flat" class="gradient text-left">
+                        <option value="1">1-комнатная квартира</option>
+                        <option value="2">2-комнатная квартира</option>
+                        <option value="3">3-комнатная квартира</option>
+                        <option value="4">4-комнатная квартира</option>
+                    </select>
+
+                </div>
+
+
+                <div class="filter__block pull-left">
+                    
+                    <span class="filter__text">Этаж:</span>
+
+                    <div class="filter__range">
+                        <input type="text" class="from" placeholder="от">
+                        <div class="separator"></div>
+                        <input type="text" class="to" placeholder="до">
+                    </div>
+
+                </div>
+
+
+                <div class="filter__block pull-right text-right">
+                    
+                    <span class="filter__text text-left">Площадь:</span>
+
+                    <div class="filter__range text-left">
+                        <input type="text" class="from" placeholder="от">
+                        <div class="separator"></div>
+                        <input type="text" class="to" placeholder="до">
+                    </div>
+
+                    <div class="filter__pick text-left">
+                        <input type="checkbox" id="checkbox-1">
+                        <label for="checkbox-1">с отделкой</label>
+                        <br>
+                        <input type="checkbox" id="checkbox-2">
+                        <label for="checkbox-2">без отделки</label>
+                    </div>
+
+                </div>
+
+
+                <div class="filter__block pull-left">
+                    <span class="filter__text">Цена за м<sup>2</sup>:</span>
+                    <div class="slider">
+                        <span class="slider-limit pull-left">0 <small>руб</small></span>
+                        <span class="slider-limit pull-right">50 000 <small>руб</small></span>
+                    </div>
+                </div>
+
+                <div class="filter__block pull-right text-right">
+                    <span class="filter__text text-left">Стоимость:</span>
+                    <div class="slider">
+                        <span class="slider-limit pull-left">0 <small>руб</small></span>
+                        <span class="slider-limit pull-right">50 000 <small>руб</small></span>
+                    </div>
+                </div>
+
+                <div class="filter__block pull-left filter__button">
+                    <a href="" class="btn btn-primary gradient pull-left">Подобрать квартиру</a>
+                </div>
+
+                <div class="filter__block pull-right filter__button">
+                    <a href="" class="btn btn-default gradient pull-right js-popup">Сбросить параметры</a>
+                </div>
+
+            </div>
+            <!-- [-] .filter -->
+
+
+            <!-- [+] .crumbs -->
+            <div class="crumbs">
+            
+                <a href="" class="crumbs__item">Главная</a>
+
+                <span>/</span>
+
+                <a href="" class="crumbs__item">Каталог</a>
+
+            </div>
+            <!-- [-] .crumbs -->
+
+
+            <div class="page-header">Каталог</div>
+
+            <div class="text-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui</div>
+
+            <!-- [+] .catalog -->
+            <div class="catalog clearfix">
+
+                <!-- [+] .catalog__item -->
+                <div class="catalog__item pull-left clearfix">
+
+                    <div class="item-image pull-left"> <img src="files/catalog-item.jpg" height="275" width="254" alt=""> </div>
+
+                    <div class="item-info pull-right">
+                        <span class="item-name">Корпус № 1</span>
+                        <table class="table3">
+                            <tbody>
+                                <tr>
+                                    <td>Секций:</td>
+                                    <td>8</td>
+                                </tr>
+                                <tr>
+                                    <td>Квартир:</td>
+                                    <td>1200</td>
+                                </tr>
+                                <tr>
+                                    <td>1-ком:</td>
+                                    <td>120</td>
+                                </tr>
+                                <tr>
+                                    <td>2-ком:</td>
+                                    <td>880</td>
+                                </tr>
+                                <tr>
+                                    <td>3-ком:</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <td>Студии:</td>
+                                    <td>1200</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a href="" class="btn btn-primary gradient">Подробнее</a>
+                    </div>
+
+                    <div class="status status--ready">Дом сдан</div>
+
+                    <div class="spec">Спецпредложение</div>
+
+                </div>
+                <!-- [-] .catalog__item -->
+
+                <!-- [+] .catalog__item -->
+                <div class="catalog__item pull-left clearfix">
+
+                    <div class="item-image pull-left"> <img src="files/catalog-item.jpg" height="275" width="254" alt=""> </div>
+
+                    <div class="item-info pull-right">
+                        <span class="item-name">Корпус № 1</span>
+                        <table class="table3">
+                            <tbody>
+                                <tr>
+                                    <td>Секций:</td>
+                                    <td>8</td>
+                                </tr>
+                                <tr>
+                                    <td>Квартир:</td>
+                                    <td>1200</td>
+                                </tr>
+                                <tr>
+                                    <td>1-ком:</td>
+                                    <td>120</td>
+                                </tr>
+                                <tr>
+                                    <td>2-ком:</td>
+                                    <td>880</td>
+                                </tr>
+                                <tr>
+                                    <td>3-ком:</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <td>Студии:</td>
+                                    <td>1200</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a href="" class="btn btn-primary gradient">Подробнее</a>
+                    </div>
+
+                    <div class="status status--process">Строящийся объект</div>
+
+                </div>
+                <!-- [-] .catalog__item -->
+
+                <!-- [+] .catalog__item -->
+                <div class="catalog__item pull-left clearfix">
+
+                    <div class="item-image pull-left"> <img src="files/catalog-item.jpg" height="275" width="254" alt=""> </div>
+
+                    <div class="item-info pull-right">
+                        <span class="item-name">Корпус № 1</span>
+                        <table class="table3">
+                            <tbody>
+                                <tr>
+                                    <td>Секций:</td>
+                                    <td>8</td>
+                                </tr>
+                                <tr>
+                                    <td>Квартир:</td>
+                                    <td>1200</td>
+                                </tr>
+                                <tr>
+                                    <td>1-ком:</td>
+                                    <td>120</td>
+                                </tr>
+                                <tr>
+                                    <td>2-ком:</td>
+                                    <td>880</td>
+                                </tr>
+                                <tr>
+                                    <td>3-ком:</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <td>Студии:</td>
+                                    <td>1200</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a href="" class="btn btn-primary gradient">Подробнее</a>
+                    </div>
+
+                    <div class="status status--ready">Дом сдан</div>
+
+                </div>
+                <!-- [-] .catalog__item -->
+
+                <!-- [+] .catalog__item -->
+                <div class="catalog__item pull-left clearfix">
+
+                    <div class="item-image pull-left"> <img src="files/catalog-item.jpg" height="275" width="254" alt=""> </div>
+
+                    <div class="item-info pull-right">
+                        <span class="item-name">Корпус № 1</span>
+                        <table class="table3">
+                            <tbody>
+                                <tr>
+                                    <td>Секций:</td>
+                                    <td>8</td>
+                                </tr>
+                                <tr>
+                                    <td>Квартир:</td>
+                                    <td>1200</td>
+                                </tr>
+                                <tr>
+                                    <td>1-ком:</td>
+                                    <td>120</td>
+                                </tr>
+                                <tr>
+                                    <td>2-ком:</td>
+                                    <td>880</td>
+                                </tr>
+                                <tr>
+                                    <td>3-ком:</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <td>Студии:</td>
+                                    <td>1200</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a href="" class="btn btn-primary gradient">Подробнее</a>
+                    </div>
+
+                    <div class="status status--ready">Дом сдан</div>
+
+                </div>
+                <!-- [-] .catalog__item -->
+
+                <!-- [+] .pagination -->
+                <div class="pagination">
+                    <ul>
+                        <li class="arrow arrow-prev"> <a href="#" class="btn btn-primary gradient"></a> </li>
+                        <li> <a href="#">1</a> </li>
+                        <li> <a href="#">2</a> </li>
+                        <li> <a href="#">3</a> </li>
+                        <li> <a href="#">4</a> </li>
+                        <li> <a href="#">5</a> </li>
+                        <li> <a href="#">6</a> </li>
+                        <li> <a href="#">7</a> </li>
+                        <li class="arrow arrow-next"> <a href="#" class="btn btn-primary gradient"></a> </li>
+                    </ul>
+                </div>
+                <!-- [-] .pagination -->
+
+            </div>
+            <!-- [-] .catalog -->
+
+
+            <!-- [+] .news -->
+            <div class="news">
+
+                <div class="news-header h1">Новости
+                <a href="" class="pull-right">все новости</a>
+                </div>
+
+                <!-- [+] .news-content -->
+                <div class="news-content clearfix">
+
+                    <!-- [+] .news__item -->
+                    <div class="news__item clearfix pull-left">
+                        <div class="img-wrapper pull-left"> <img src="files/news-img.jpg" height="86" width="132" alt=""> </div>
+                        <span class="news__date">13.02.15</span>
+                        <a href="" class="news__text">Наполнение контента страницы, тестовое наполнение контента страницы с примерным форматированием и отступами, тестовое наполнение контента страницы с примерным форматированием, тестовое наполнение </a>
+                    </div>
+                    <!-- [-] .news__item -->
+
+
+                    <!-- [+] .news__item -->
+                    <div class="news__item clearfix pull-left">
+                        <div class="img-wrapper pull-left"> <img src="files/news-img.jpg" height="86" width="132" alt=""> </div>
+                        <span class="news__date">13.02.15</span>
+                        <a href="" class="news__text">Наполнение контента страницы, тестовое наполнение контента страницы с примерным форматированием и отступами, тестовое наполнение контента страницы с примерным форматированием, тестовое наполнение </a>
+                    </div>
+                    <!-- [-] .news__item -->
+
+                </div>
+                <!-- [-] .news-content -->
+
+            </div>
+            <!-- [-] .news -->
+
+
+        </div>
+        <!-- [-] .page-wrapper__inner -->
+
+    </div>
+    <!-- [-] .page-wrapper -->
+
+
+    <!-- [+] .popup -->
+    <div class="popup">
+    
+        <span class="popup-text">Popup</span>
+
+        <span class="popup-close b-close">
+            <span>X</span>
+        </span>
+    
+    </div>
+    <!-- [-] .popup -->
+    
+
+    <script src="js/jquery.min.js"></script>
+
+    <script src="js/jquery.bpopup.min.js"></script>
+
+    <script src="js/jquery.nouislider.all.min.js"></script>
+
+    <script src="js/wNumb.min.js"></script>
+
+    <script src="js/jquery.liblink.js"></script>
+
+    <script src="js/jquery.formstyler.min.js"></script>
+
+    <script src="js/index.js"></script>
+
+    <!-- B.M. id-1054 -->
+
+</body>
+</html>

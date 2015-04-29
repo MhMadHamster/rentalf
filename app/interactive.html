@@ -7,7 +7,7 @@
     <meta name="keywords" content="{$page.keywords}">
     <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
 
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
 
     <title>{$page.title}</title>
@@ -50,7 +50,7 @@
                     
                     <span class="filter__text text-left">Номер дома:</span>
 
-                    <select name="apartment" id="apartment" class="gradient text-left">
+                    <select name="apartment" id="flat" class="gradient text-left">
                         <option value="1">1-комнатная квартира</option>
                         <option value="2">2-комнатная квартира</option>
                         <option value="3">3-комнатная квартира</option>
@@ -96,7 +96,7 @@
 
                 <div class="filter__block pull-left">
                     <span class="filter__text">Цена за м<sup>2</sup>:</span>
-                    <div class="slider" class="clearfix">
+                    <div class="slider">
                         <span class="slider-limit pull-left">0 <small>руб</small></span>
                         <span class="slider-limit pull-right">50 000 <small>руб</small></span>
                     </div>
@@ -104,7 +104,7 @@
 
                 <div class="filter__block pull-right text-right">
                     <span class="filter__text text-left">Стоимость:</span>
-                    <div class="slider" class="clearfix">
+                    <div class="slider">
                         <span class="slider-limit pull-left">0 <small>руб</small></span>
                         <span class="slider-limit pull-right">50 000 <small>руб</small></span>
                     </div>
@@ -115,7 +115,7 @@
                 </div>
 
                 <div class="filter__block pull-right filter__button">
-                    <a href="" class="btn btn-default gradient pull-right">Сбросить параметры</a>
+                    <a href="" class="btn btn-default gradient pull-right js-popup">Сбросить параметры</a>
                 </div>
 
 
@@ -124,7 +124,9 @@
 
 
             <div class="plan">
+
                 <div class="section">
+
                     <div class="section__roof"><span>1-ая секция</span></div>
 
                     <ul class="home">
@@ -568,6 +570,7 @@
                         </li>
                     </ul>
                 </div>
+
                 <div class="section">
                     <div class="section__roof"><span>3-ая секция</span></div>
                     <ul class="home">
@@ -789,6 +792,7 @@
                         </li>
                     </ul>
                 </div>
+
                 <div class="section">
                     <div class="section__roof"><span>4-ая секция</span></div>
                     <ul class="home">
@@ -1036,8 +1040,8 @@
 
                 </div>
 
-
             </div>
+            <!-- [-] .plan -->
 
 
         </div>
@@ -1045,9 +1049,24 @@
 
     </div>
     <!-- [-] .page-wrapper -->
+
+
+    <!-- [+] .popup -->
+    <div class="popup">
+    
+        <span class="popup-text">Popup</span>
+
+        <span class="popup-close b-close">
+            <span>X</span>
+        </span>
+    
+    </div>
+    <!-- [-] .popup -->
     
 
-    <script src="bower_components/jquery-1.11.1/dist/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+
+    <script src="js/jquery.bpopup.min.js"></script>
 
     <script src="js/jquery.nouislider.all.min.js"></script>
 
@@ -1059,6 +1078,7 @@
 
     <script src="js/index.js"></script>
 
+    <!-- B.M. id-1054 -->
 
 </body>
 </html>

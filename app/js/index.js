@@ -16,11 +16,14 @@ $(document).ready(function() {
         })
     })
 
-    // $("#slider").Link('lower').to('-inline-<div class="tooltip"></div>');
-
     $('.slider').Link('lower').to('-inline-<div class="tooltip"></div>', function(value) {
         $(this).html(
                 value 
             );
+    });
+
+    $('.js-popup').on('click', function(e) {
+        e.preventDefault();
+        $('.popup').bPopup();
     });
 })

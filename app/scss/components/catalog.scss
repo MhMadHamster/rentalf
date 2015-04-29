@@ -1,0 +1,180 @@
+.catalog {
+    margin: 24px 0 30px;
+    width: 100%;
+
+    &__item {
+        width: 450px;
+        box-sizing: border-box;
+        border: 1px solid #e7e7e7;
+        padding: 19px 20px 19px 19px;
+        position: relative;
+        margin-bottom: 30px;
+        
+        &:nth-child(2n+1) {
+            margin-right: 53px;
+        }
+    }
+
+    .item-image {
+        max-width: 254px;
+        max-height: 275px;
+
+        & > img {
+            max-width: 100%;
+        }
+    }
+
+    .item-info {
+        width: 133px;
+
+        .item-name {
+            margin-left: -1px;
+            margin-top: 2px;
+            margin-bottom: 8px;
+            display: block;
+            font-size: 20px;
+            line-height: 33px;
+            color: #353535;
+        }
+
+        & > .btn {
+            width: 100%;
+            margin-top: 11px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+    }
+
+    .status {
+        position: absolute;
+        font-size: 14px;
+        line-height: 30px;
+        padding: 0 9px;
+        top: 14px;
+        right: -15px;
+        transform: rotate(-90deg);
+        transform-origin: right;
+        letter-spacing: -0.2px;
+
+        &--ready {
+            color: #fff;
+            background-color: #78b020;
+        }
+
+        &--process {
+            color: #353535;
+            background-color: #e1e1e1;
+        }
+    }
+
+    .spec {
+        background-color: #ffcc00;
+        position: absolute;
+        top: 19px;
+        left: 14px;
+        font-size: 13px;
+        font-weight: bold;
+        color: #fff;
+        line-height: 30px;
+        padding: 0 4px 0 17px;
+        text-shadow: 0 1px 0 rgba(#000, .2);
+        letter-spacing: -0.2px;
+
+        &:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            top: 0;
+            right: -16px;
+            display: block;
+            border-left: 16px solid #ffcc00;
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            bottom: -5px;
+            left: 0;
+            border-top: 5px solid #ffa300;
+            border-left: 5px solid transparent;
+        }
+    }
+
+    .pagination {
+        clear: both;
+        text-align: center;
+
+        & > ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-size: 0;
+
+            & > li {
+                display: inline-block;
+                height: 41px;
+                width: 40px;
+                box-sizing: border-box;
+                border: 1px solid #e7e7e7;
+                border-left: none;
+                vertical-align: top;
+                font-size: 14px;
+
+                & > a {
+                    text-decoration: none;
+                    font-size: 14px;
+                    color: #4d4d4d;
+                    box-sizing: border-box;
+                    display: block;
+                    padding: 11.5px;
+                }
+
+                &:first-child {
+                    border-left: 1px solid #e7e7e7;
+                }
+
+                &.arrow {
+                    border-top: none;
+                    border-bottom: none;
+
+                    &:first-child {
+                        border-left: none;
+                    }
+
+                    &:last-child {
+                        border-right: none;
+                    }
+
+                    & > a {
+                        height: 39px;
+                        position: relative;
+
+                        &:after {
+                            content: '';
+                            display: block;
+                            background-image: url('../images/pagination-arrow.png');
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            bottom: 0;
+                            right: 0;
+                            margin: auto;
+                            width: 8px;
+                            height: 10px;
+                            background-repeat: no-repeat;
+                        }
+                    }
+
+                    &.arrow-next > a:after {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+    }
+}

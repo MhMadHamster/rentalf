@@ -52,7 +52,7 @@
     }
 
     &__phone {
-        margin: 25px 0 25px 5px;
+        margin: 20px 0 28px 5px;
 
         .phone-thumb {
             display: inline-block;
@@ -60,8 +60,9 @@
         }
 
         .phone-text {
+            margin-left: 8px;
             display: inline-block;
-            vertical-align: middle;
+            vertical-align: top;
 
             .muted {
                 font-size: 14px;
@@ -80,12 +81,15 @@
     }
 
     .btn {
-        margin-left: 5px;
+        margin-left: 3px;
+        letter-spacing: -0.3px;
+        padding: 10px 24px;
+
     }
 
     &__img-thumb {
-        margin-top: 16px;
-        margin-right: 17px;
+        margin-top: 11px;
+        margin-right: 16px;
         position: relative;
         width: 260px;
         height: 190px;
@@ -93,12 +97,13 @@
         .thumb-caption {
             display: block;
             position: absolute;
+            box-sizing: border-box;
             bottom: 0;
             left: 0;
             width: 100%;
             font-size: 17px;
             color: #353535;
-            padding: 15px 20px;
+            padding: 15px 18px 11px;
             background-color: rgba(#fff, .8);
         }
 

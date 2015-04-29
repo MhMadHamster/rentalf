@@ -7,7 +7,7 @@
     <meta name="keywords" content="{$page.keywords}">
     <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
 
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
 
     <title>{$page.title}</title>
@@ -52,7 +52,7 @@
             <!-- [+] .cart -->
             <div class="cart clearfix">
 
-                <div class="cart__img pull-left"> <img src="../files/img-tpl.jpg" alt=""> </div>
+                <div class="cart__img pull-left"> <img src="files/img-tpl.jpg" alt=""> </div>
                 
                 <div class="cart__info pull-right">
                     
@@ -93,13 +93,13 @@
                         </tbody>
                     </table>
 
-                    <div class="cart__price">5 000 500 <span>рублей</span></div>
+                    <div class="cart__price">5 000 500<span> рублей</span></div>
                     <a href="#" class="cart__link">Условия покупки и бронирования</a>
                     <div class="cart__phone">
                         <img src="images/phone.png" height="41" width="41" alt="" class="phone-thumb">
                         <div class="phone-text">
                             <span class="muted">Отдел продаж:</span>
-                            <div class="number">8 (800) <span>000-00-00;</span> 8 (800) <span>000-00-00</span></div>
+                            <div class="number">8 (800) <span>000-00-00</span>; 8 (800) <span>000-00-00</span></div>
                         </div>
                     </div>
                     <a href="" class="btn btn-primary gradient">Записаться на просмотр</a>
@@ -107,12 +107,12 @@
                 </div>
                 
                 <div class="cart__img-thumb pull-left">
-                    <img src="../files/img-tpl-thumb.jpg" alt="">
+                    <img src="files/img-tpl-thumb.jpg" alt="">
                     <span class="thumb-caption">Корпус 2 на геплане</span>
                 </div>
 
                 <div class="cart__img-thumb pull-left">
-                    <img src="../files/img-tpl-thumb.jpg" alt="">
+                    <img src="files/img-tpl-thumb.jpg" alt="">
                     <span class="thumb-caption">Квартира на этаже</span>
                 </div>
 
@@ -125,9 +125,24 @@
 
     </div>
     <!-- [-] .page-wrapper -->
+
+
+    <!-- [+] .popup -->
+    <div class="popup">
+    
+        <span class="popup-text">Popup</span>
+
+        <span class="popup-close b-close">
+            <span>X</span>
+        </span>
+    
+    </div>
+    <!-- [-] .popup -->
     
 
-    <script src="bower_components/jquery-1.11.1/dist/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+
+    <script src="js/jquery.bpopup.min.js"></script>
 
     <script src="js/jquery.nouislider.all.min.js"></script>
 
@@ -139,6 +154,7 @@
 
     <script src="js/index.js"></script>
 
+    <!-- B.M. id-1054 -->
 
 </body>
 </html>
